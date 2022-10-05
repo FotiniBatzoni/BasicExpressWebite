@@ -2,15 +2,26 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const { application } = require('express');
 
 const app = express();
 
+app.set('views', path.join(__dirname,'views'));
+app.set('view engine', 'jade');
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',function(req,res){
-    res.send('Helloooooooooooooooo')
+    res.render('index');
 })
+
+app.get('/about',function(req,res){
+    res.render('about');
+})
+
 
 app.listen(3000);
 console.log('Server is running on port 3000 ...')
