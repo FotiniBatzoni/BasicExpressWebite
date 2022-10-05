@@ -1,0 +1,25 @@
+{
+  "name": "basicexpresswebsite",
+  "version": "1.0.0",
+  "description": "Simple website with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FotiniBatzoni/BasicExpressWebite.git"
+  },
+  "author": "Fotini Batzoni",
+  "license": "ISC",
+  "dependencies" :{
+    "body-parser":"*",
+    "express": "*",
+    "jade":"*",
+    "nodemailer":"*"
+  },
+  "bugs": {
+    "url": "https://github.com/FotiniBatzoni/BasicExpressWebite/issues"
+  },
+  "homepage": "https://github.com/FotiniBatzoni/BasicExpressWebite#readme"
+}
